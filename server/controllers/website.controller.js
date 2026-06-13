@@ -997,7 +997,6 @@ export const getBySlug = async(req, res)=>{
   try {
     const website = await Website.findOne({
           slug:req.params.slug,
-          user:req.user._id
         })
 
     if(!website){
